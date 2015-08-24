@@ -67,7 +67,7 @@ function rendercharacters {
   -e 's/TILDE/`/' \
   -e 's/UP/↑/' \
   -e 's/function/Layer/' \
-  -e 's/BACKSLASH/\\/' \
+  -e 's/BACKSLASH/\\\\/' \
   -e 's/SLASH/\\\//'
 }
 
