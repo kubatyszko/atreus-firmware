@@ -4,17 +4,17 @@ F_CPU=16000000
 
 TARGET=atreus
 
-SWAPCOLUMNS=no
+SWAPCOLUMNS=yes
 # set to allow for flipping the PCB
 
-LAYOUT ?= qwerty
+LAYOUT ?= kuba
 ifneq ($(LAYOUT), qwerty)
 LAYOUT_DEPENDS=jsonlayout
 endif
 
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Darwin)
-  USB ?= /dev/tty.usbmodem1411
+  USB ?= /dev/tty.usbmodem1421
 else
   USB ?= /dev/ttyACM0
 endif
